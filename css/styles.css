@@ -3093,6 +3093,7 @@ img.u-pull-left {
 .s-intro {
   padding-top: calc(9.5 * var(--space));
   width: 100%;
+  height: 180vh;
   position: relative;
 }
 
@@ -3142,13 +3143,27 @@ img.u-pull-left {
 .s-intro__bg {
   aspect-ratio: 1/1;
   width: 100%;
-  height: 50%;
+  height: 37%;
   background-color: #cfe6e8;
   background-image: url(../images/intro-bg.jpeg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   position: relative;
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+  .s-intro__bg {
+    margin-top: 54rem;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+  .s-intro__bg {
+    margin-top: 18rem;
+  }
 }
 
 .s-intro__bg::after {
